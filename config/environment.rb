@@ -4,6 +4,7 @@ require 'yaml/store'
 require 'ostruct'
 require 'date'
 
+require_relative "../artist.rb"
 
 require 'bundler/setup'
 Bundler.require
@@ -26,4 +27,3 @@ SQL
  
 ActiveRecord::Base.connection.execute(sql)
 
-require_relative "../artist.rb"
